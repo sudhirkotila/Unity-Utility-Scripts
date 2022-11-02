@@ -8,7 +8,7 @@ using UnityEditor;
 using UnityEngine;
 using System.Collections;
 
-public class Sudhir_Shortcuts : MonoBehaviour
+public class MenuShortcuts : MonoBehaviour
 {
     /*  To create a hotkey you can use the following special 
      * characters: % (ctrl on Windows, cmd on OS X), # (shift), & (alt), <b>_</b> (no key modifiers). 
@@ -22,7 +22,7 @@ public class Sudhir_Shortcuts : MonoBehaviour
     /// <summary>
     /// Alt+Shift+A -> To Active or Deactive Objects
     /// </summary>
-    [MenuItem("Sudhir's Menu/ActiveOrDeactive GameObject &#a")]
+    [MenuItem("MyShortcuts/ActiveOrDeactive GameObject &#a")]
     static void ActiveOrDeactiveGameObject()
     {
         int noOfSelection = Selection.transforms.Length;
@@ -42,7 +42,7 @@ public class Sudhir_Shortcuts : MonoBehaviour
     /// <summary>
     /// Alt+Shift+A -> To Create New GameObject Or Make New Child If Object Is Selected
     /// </summary>
-	[MenuItem("Sudhir's Menu/CreateGameObjectOrChild &#n")]
+	[MenuItem("MyShortcuts/CreateGameObjectOrChild &#n")]
     static void CreateChildOrNewGameObject()
     {
         int noOfSelection = Selection.transforms.Length;
@@ -86,7 +86,7 @@ public class Sudhir_Shortcuts : MonoBehaviour
     /// <summary>
     /// Set Position Vector To 0
     /// </summary>
-	[MenuItem("Sudhir's Menu/Set Rotation To Zero  &#r")]
+	[MenuItem("MyShortcuts/Set Rotation To Zero  &#r")]
     static void SetRotation()
     {
         int noOfSelection = Selection.transforms.Length;
@@ -107,7 +107,7 @@ public class Sudhir_Shortcuts : MonoBehaviour
     /// <summary>
     /// Set Scale Vector To 0
     /// </summary>
-	[MenuItem("Sudhir's Menu/Set Scal To One  &#s")]
+	[MenuItem("MyShortcuts/Set Scal To One  &#s")]
     static void SetScale()
     {
         int noOfSelection = Selection.transforms.Length;
@@ -128,7 +128,7 @@ public class Sudhir_Shortcuts : MonoBehaviour
     /// <summary>
     /// Add Rigidbody 2d
     /// </summary>
-	[MenuItem("Sudhir's Menu/Add2DBody  #r2")]
+	[MenuItem("MyShortcuts/Add2DBody  #r2")]
     static void AddRigidbody2D()
     {
         print("Body");
@@ -151,7 +151,7 @@ public class Sudhir_Shortcuts : MonoBehaviour
     /// <summary>
     /// Add Rigidbody 3D
     /// </summary>
-	[MenuItem("Sudhir's Menu/Add3DBody  &r3")]
+	[MenuItem("MyShortcuts/Add3DBody  &r3")]
     static void AddRigidbody3D()
     {
         print("Body");
