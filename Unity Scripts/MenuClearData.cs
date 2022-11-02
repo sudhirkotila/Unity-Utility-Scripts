@@ -3,7 +3,7 @@ using UnityEditor;
 
 public class MenuItems
 {
-	[MenuItem ("Sudhir's ShortCuts/Clear PlayerPrefs")]
+	[MenuItem ("MyShortCuts/Clear PlayerPrefs")]
 	private static void NewMenuOption ()
 	{
 		PlayerPrefs.DeleteAll();
