@@ -64,7 +64,7 @@ public class MenuShortcuts : MonoBehaviour
     /// <summary>
     /// Set Position Vector To 0
     /// </summary>
-	[MenuItem("Sudhir's Menu/Set Position To Zero  &#p")]
+	[MenuItem("MyShortcuts/Set Position To Zero  &#p")]
     static void SetPosition()
     {
         int noOfSelection = Selection.transforms.Length;
