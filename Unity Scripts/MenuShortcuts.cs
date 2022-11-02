@@ -1,5 +1,5 @@
 ﻿/// <summary>
-/// Sudhir_ shortcuts.cs
+/// MenuShortcuts.cs
 /// Developer Name : Sudhir Kotila
 /// Email : sudhir.kotila@gmail.com
 /// </summary>
