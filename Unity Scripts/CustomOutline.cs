@@ -1,16 +1,13 @@
 ﻿using System.Collections.Generic;
-using UnityEngine;
 
 namespace UnityEngine.UI
 {
-
     public class CustomOutline : Shadow
     {
         [Range(0, 15)]
         public float m_size = 3.0f;
 
         public bool glintEffect;
-
 
         [RangeAttribute(0, 5)]
         public int glintVertex = 0;
@@ -26,10 +23,9 @@ namespace UnityEngine.UI
 
             vh.GetUIVertexStream(verts);
 
-            var neededCpacity = verts.Count * 10;
+            var neededCpacity = verts.Count * 5;
             if (verts.Capacity < neededCpacity)
                 verts.Capacity = neededCpacity;
-
 
             if (glintEffect)
             {
