@@ -46,10 +46,7 @@ public class VibrateMobile : MonoBehaviour
 
     public static void Vibrate()
     {
-        if (GameProperties.isVibrationOn == 0) return;
-        print("=== Normal Vibrate ===");
 #if UNITY_ANDROID && !UNITY_EDITOR
-print("AAAAAAAAAA");
             vibrator.Call("vibrate");
 #elif UNITY_IOS && !UNITY_EDITOR
             _VibratePop ();
@@ -61,8 +58,6 @@ print("AAAAAAAAAA");
 
     public static void Vibrate(long milliseconds)
     {
-        if (GameProperties.isVibrationOn == 0) return;
-
 #if UNITY_ANDROID && !UNITY_EDITOR
             vibrator.Call("vibrate", milliseconds);
 #elif UNITY_IOS && !UNITY_EDITOR
@@ -72,8 +67,6 @@ print("AAAAAAAAAA");
 
     public static void Vibrate(long[] pattern, int repeat)
     {
-        if (GameProperties.isVibrationOn == 0) return;
-
         if (isAndroid())
             vibrator.Call("vibrate", pattern, repeat);
         else
@@ -82,9 +75,6 @@ print("AAAAAAAAAA");
 
     public static void Vibrate(VibrateIntensity intensity)
     {
-        if (GameProperties.isVibrationOn == 0) return;
-
-        print("<color=yellow>=== BUZZ ===</color>");
         switch (intensity)
         {
             case VibrateIntensity.None:
@@ -94,7 +84,6 @@ print("AAAAAAAAAA");
                 Vibrate((long)25);
                 break;
             case VibrateIntensity.Medium:
-                print("Medium - Buzzzzzzzzzzzzzzzzzzz");
                 Vibrate((long)50);
                 break;
             case VibrateIntensity.High:
